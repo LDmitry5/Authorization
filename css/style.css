@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background: conic-gradient(from 180deg at 50% 50%, #61ffd0 0deg, #8161ff 70.5deg, #fd95ff 162.37deg, #95c0ff 233.62deg, #95d9ff 310.5deg, #61ffd0 360deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px;
+  background: #afcdc7;
+  border-radius: 20px;
+  border: 7px solid #839894;
+  opacity: 0.8;
+}
+.form__registration {
+  justify-content: flex-start;
+  height: 510px;
+}
+.form__recovery {
+  justify-content: flex-start;
+  width: 650px;
+  height: 280px;
+}
+.form__h1 {
+  font-size: 40px;
+}
+.form__h1__registration {
+  margin-bottom: 15px;
+}
+.form__h2 {
+  color: #55615f;
+  font-size: 24px;
+}
+.form__h2__recovery {
+  margin: 15px 0;
+}
+.form__label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+  font-size: 18px;
+}
+.form__label__registration {
+  margin-bottom: 15px;
+}
+.form__label__input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #6a7b78;
+  font-size: 18px;
+}
+.form__label__input:invalid {
+  border: 2px solid red;
+}
+.form__label__input:valid {
+  border: 1px solid #6a7b78;
+}
+.form__check {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  font-size: 18px;
+}
+.form__check__input {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+.form__btnRecovery {
+  border: none;
+  background: transparent;
+  color: #2d479c;
+  font-size: 14px;
+  cursor: pointer;
+}
+.form__btn {
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  background: #26ab38;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.form__btn__registration {
+  width: 200px;
+}
+.form__btn__recovery {
+  width: 200px;
+}
+
+.successfully {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #afcdc7;
+  border-radius: 20px;
+  border: 7px solid #839894;
+  opacity: 0.8;
+  font-size: 32px;
+}
+
+.form__display,
+.successfully__display {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

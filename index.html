@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Authorization</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <form
+        id="registration"
+        class="form form__registration form__display"
+        action=""
+      >
+        <h1 class="form__h1 form__h1__registration">Регистрация</h1>
+        <label class="form__label form__label__registration" for="login">
+          Имя
+          <input
+            required
+            class="form__label__input"
+            type="text"
+            name="text"
+            id="nameInput"
+            placeholder="Дмитрий"
+          />
+        </label>
+        <label class="form__label form__label__registration" for="login">
+          Email
+          <input
+            class="form__label__input"
+            type="email"
+            name="email"
+            id="emailInput"
+            placeholder="123@mail.ru"
+            required
+          />
+        </label>
+        <label class="form__label form__label__registration" for="password">
+          Пароль
+          <input
+            required
+            minlength="6"
+            class="form__label__input"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </label>
+        <label class="form__label" for="password">
+          Подтверждение пароля
+          <input
+            required
+            minlength="6"
+            class="form__label__input"
+            type="password"
+            name="repeatPassword"
+            id="repeatPassword"
+          />
+        </label>
+        <button id="btnRegistration" class="form__btn form__btn__registration">
+          Регистрация
+        </button>
+      </form>
+      <form id="authorization" class="form" action="">
+        <h1 class="form__h1">Авторизация</h1>
+        <h2 class="form__h2">Пожалуйста, авторизуйтесь</h2>
+        <label class="form__label" for="login">
+          Логин
+          <input
+            class="form__label__input"
+            type="email"
+            name="login"
+            id="login"
+            placeholder="123@mail.ru"
+            required
+          />
+        </label>
+        <label class="form__label" for="password">
+          Пароль
+          <input
+            required
+            minlength="6"
+            class="form__label__input"
+            type="password"
+            name="enteringPassword"
+            id="enteringPassword"
+          />
+        </label>
+        <label class="form__check" for="check">
+          <input
+            class="form__check__input"
+            type="checkbox"
+            name="check"
+            id="check"
+          />
+          Запомнить меня на этом компьютере
+        </label>
+        <button id="linkRegister" class="form__btnRecovery">
+          Зарегистрироваться
+        </button>
+        <button id="linkRecovery" class="form__btnRecovery">
+          Забыли свой пароль?
+        </button>
+        <button id="btnToComeIn" class="form__btn">войти</button>
+      </form>
+      <form id="recovery" class="form form__recovery form__display" action="">
+        <h1 class="form__h1">Восстановление доступа</h1>
+        <h2 class="form__h2 form__h2__recovery">
+          Пожалуйста, введите Ваш адрес электронной почты
+        </h2>
+        <label class="form__label" for="login">
+          <input
+            class="form__label__input"
+            type="email"
+            name="emailRecovery"
+            id="emailRecoveryInput"
+            placeholder="123@mail.ru"
+            required
+          />
+        </label>
+        <button id="btnRecovery" class="form__btn form__btn__recovery">
+          Восстановить
+        </button>
+      </form>
+      <div id="successfully" class="successfully successfully__display">
+        Спасибо! Данные успешно отправлены
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
